@@ -2,26 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pauloerweber-guia-infnet
-  labels:
-    app: "guia-infnet"
-    env: "dev"
-    service: "guia-infnet"
-    port: "3000"
-    protocol: "http"
-    method: "GET"
 
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: guia-infnet
+      app: pauloerweber-guia-infnet
   template:
     metadata:
       labels:
-        app: guia-infnet
+        app: pauloerweber-guia-infnet
     spec:
       containers:
-      - name: guia-infnet
+      - name: pauloerweber-guia-infnet
         image: pauloerweber/pauloweberinfnet-infnet-guia:latest
         ports:
         - containerPort: 3000
