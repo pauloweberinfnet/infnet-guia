@@ -26,3 +26,6 @@ kubectl apply -f k8s/[SERVICE OU DEPLOYMENT].yaml
 ```
 
 Dentro do diretório `k8s/monitoring` estão os serviços de monitoramento que devem ser executados da mesma maneira, apenas alterando o caminho dos arquivos `yaml`.
+
+## Testes
+Os testes sao realizados pelo job K6 disponível na pasta k8s/tests.
